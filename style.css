@@ -2,8 +2,12 @@
     color: white;
 }
 
+html { 
+    overflow-y: scroll; 
+}
 
 body {
+    position: absolute;
     margin: 0px;
     height: 500px;
     background-color:#25282a;
@@ -11,13 +15,15 @@ body {
 
 .grid_container {
     display: grid;
-    grid-template-columns: repeat(3, 500px);
-    grid-template-rows: 100px repeat(2, 250px);
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px;
     grid-gap: 10px;
+    /* border: 2px white double; */
 }
 
 .box1 {
     background-color:#25282a;
+    /* border: 2px white double; */
 }
 
 .linkedIn {
@@ -42,6 +48,7 @@ body {
 
 .box2 {
     background-color:#25282a;
+    /* border: 2px white double; */
 }
 
 nav {
@@ -76,14 +83,16 @@ nav a {
     }
 }
 
-.box3 {
+ .box3 {
     background-color:#25282a;
-}
+    /* border: 2px white double; */
+} 
 
 
 .box4 {
     background-color:#25282a;
-}
+    /* border: 2px white double; */
+} 
 
 .name {
     position: absolute;
@@ -109,10 +118,6 @@ nav a {
         color: rgb(225, 214, 150);
     }
 
-.box5 {
-    background-color: #25282a;
-}
-
 .box5_desctiption {
     position: absolute;
     top: 290px;
@@ -122,7 +127,6 @@ nav a {
     font-size: 30px;
     line-height: 1.5;
     text-align: left;
-
 }
 
 .logo {
@@ -133,17 +137,13 @@ nav a {
     right: -345px;
 } 
 
-.box6 {
-    background-color:#25282a;
-}
-
 .got_a_problem_to_solve {
     font-family: Verdana, sans-serif;
     color: rgb(242, 241, 240);
     font-size: 15px;
     line-height: 1.5;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 160px;
     position: absolute;
     right: 40px;
 }
@@ -163,17 +163,33 @@ nav a {
     right: 75px;
 }
 
+
+/* .box6 {
+    background-color:#25282a;
+    border: 2px white double;
+}
+
+.box5 {
+    background-color:#25282a;
+    border: 2px white double;
+}
+
 .box7 {
     background-color:#25282a;
+    border: 2px white double;
 }
 
 .box8 {
     background-color:#25282a;
+    border: 2px white double;
 }
 
 .box9 {
     background-color:#25282a;
-}
+    border: 2px white double;
+} */
+
+
 
 .grid_container1 {
     position: relative;
@@ -186,15 +202,23 @@ nav a {
     /* border: 4px rgb(12, 11, 11) double; */
 }
 
-.resume {
-    position:absolute;
+.box_1 {
+    position: relative;
     color: rgb(242, 241, 240);
-    margin-top: 10px;
-    left: 200px;
+    margin-top: 30px;
+    left: 100px;
     font-family: Verdana, sans-serif;
-    font-size: 40px;
+    font-size: 15px;
+    line-height: 1.5;
     text-decoration: none;
 }
+
+.about {
+    position: relative;
+    left: 100px;
+    font-size: 25px;
+}
+
 
 .skills {
     position: absolute;
@@ -243,9 +267,8 @@ nav a {
 }
 
 .video {
-    position: absolute;
-    /* z-index: -1; */
-    margin-top: 0px;
+    position: relative;
+    top: 50px;
 }
 
 .java {
