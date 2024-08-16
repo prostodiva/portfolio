@@ -28,3 +28,9 @@ console.log(navBar);
 // const container = document.querySelectorAll('div');
 // console.log(container);
 
+
+// let button = document.querySelector('button');
+// document.querySelector('#green').addEventListener('click', function() {
+//     button.style.backgroundColor = 'yellow';
+// });
+
