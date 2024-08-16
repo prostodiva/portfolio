@@ -130,22 +130,22 @@ nav a {
 }
 
 .logo {
-    position: absolute;
+    position: relative;
     /* z-index: -1;  */
     opacity: 0.2;
-    top: -150px;
-    right: 0px;
+    top: -50px;
+    right: -200px;
 } 
 
 .got_a_problem_to_solve {
     font-family: Verdana, sans-serif;
     color: rgb(242, 241, 240);
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.5;
     text-align: center;
-    margin-top: 160px;
+    margin-top: 510px;
     position: absolute;
-    right: 390px;
+    right: 350px;
 }
 
 .lets_connect {
@@ -159,8 +159,8 @@ nav a {
     text-decoration: none;
     background-color: rgb(225, 214, 150);
     position: absolute;
-    top: 160px;
-    right: 425px;
+    top: 520px;
+    right: 415px;
 }
 
 
