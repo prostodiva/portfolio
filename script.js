@@ -7,16 +7,16 @@
 // title.style.color = "rgb(225, 214, 150)";
 // console.log(title);
 
-const letsConnect = document.getElementById('letsConnect');
-letsConnect.style.color = "black";
-console.log(letsConnect);
+// const letsConnect = document.getElementById('letsConnect');
+// letsConnect.style.color = "black";
+// console.log(letsConnect);
 
 //getElementByClassName()
-const navBar = document.getElementsByClassName('box2');
-for (i = 0; i < navBar.length; i++) {
-    navBar[i].style.fontSize = '5rem';
-}
-console.log(navBar);
+// const navBar = document.getElementsByClassName('box2');
+// for (i = 0; i < navBar.length; i++) {
+//     navBar[i].style.fontSize = '5rem';
+// }
+// console.log(navBar);
 
 //getElementByTagName - ex. ('li)
 
@@ -29,8 +29,8 @@ console.log(navBar);
 // console.log(container);
 
 
-// let button = document.querySelector('button');
-// document.querySelector('#green').addEventListener('click', function() {
-//     button.style.backgroundColor = 'yellow';
-// });
+let button = document.querySelector('button');
+document.querySelector('#green').addEventListener('click', function() {
+    button.style.backgroundColor = 'yellow';
+});
 

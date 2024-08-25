@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open API Test</title>
+    <meta name="BANK ACCOUNT" content="bank account">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="box1">
+            <h2 class="title">Mortgage Calculator</h2>
+            <div class="grid_container_form">
+                <div class="text"><h2>HOME VALUE</h2></div>
+                <div class="text"><h2>DOWNPAYMENT</h2></div>
+                <div class="text"><h2>INTEREST RATE</h2></div>
+                <div class="text"><h2>DURATION YEARS</h2></div>
+                <div>EMPTY BOX</div>
+                <div>EMPTY BOX</div>
+
+                <div class="home_value_form">
+                    <input type="text" id="home_value" placeholder="Enter home value"><br>
+                </div>
+                <div class="downpayment_form">
+                    <input type="text" id="downpayment" placeholder="Enter downpayment"><br>
+                </div>
+                <div class="interest_rate_form">
+                    <input type="text" id="interest_rate" placeholder="Enter interest rate"><br>
+                </div>
+                <div class="duration_years_form">
+                    <input type="text" id="duration_years" placeholder="Enter duration years"><br>
+                </div>
+                <div class="button">
+                    <button id="submit_button">SUBMIT</button>
+                </div>
+                <div class="monthly_payments">EMPTY BOX</div>
+            </div>
+        </div>
+        <div class="box2">
+            <table id="responseTable">
+                <thead>
+                    <tr style="color:rgb(225, 214, 150);">
+                        <th><h2>HOME VALUE</h2></th>
+                        <th><h2>DOWNPAYMENT</h2></th>
+                        <th><h2>INTEREST RATE</h2></th>
+                        <th><h2>DURATION YEARS</h2></th>
+                        <th><h2>MONTHLY PAYMENT</h2></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="result">
+                        <td class="home_value"><h2>result</h2></td>
+                        <td class="downpayment"><h2>result</h2></td>
+                        <td class="interest_rate"><h2>result</h2></td>
+                        <td class="duration_years"><h2>result</h2></td>
+                        <td class="monthly_payment"><h2>result</h2></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="box3">3</div>
+        <div class="box4" style="border: 2px white double">2</div>
+        <div class="box5" style="border: 2px white double">3</div>
+        <div class="box6" style="border: 2px white double">3</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
