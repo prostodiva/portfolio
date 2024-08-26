@@ -4,23 +4,27 @@ document.addEventListener("DOMContentLoaded", function() {
     const letsConnectElement = document.getElementById("letsConnect");
     letsConnectElement.addEventListener("mouseover", 
         (event) => {
-            event.target.style.backgroundColor= "green";
+            event.target.style.backgroundColor= "rgb(97, 213, 91)";
+            event.target.style.font="italic bold 20px Verdana, sans-serif";
         });
     //color reset
     letsConnectElement.addEventListener("mouseout", 
         (event)  => {
             event.target.style.backgroundColor ="";
+            event.target.style.font="";
         });   
 
     //changing color of the bottom-header element
     const bottomHeader = document.getElementById("bottom-header");
     bottomHeader.addEventListener("mouseover", 
         (event) => {
-            event.target.style.backgroundColor="green";
+            event.target.style.backgroundColor="rgb(97, 213, 91)";
+            event.target.style.font="italic bold 20px Verdana, sans-serif";
         });
     bottomHeader.addEventListener("mouseout",
         (event) => {
             event.target.style.backgroundColor="";
+            event.target.style.font="";
         });
 
     //nav menu
