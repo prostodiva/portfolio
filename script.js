@@ -1,36 +1,40 @@
-//getElementById()
-// const logo = document.getElementById('logo');
-// logo.style.size = '5rem';
-// console.log(logo);
+document.addEventListener("DOMContentLoaded", function() {
 
-// const title = document.getElementById('box3Problem');
-// title.style.color = "rgb(225, 214, 150)";
-// console.log(title);
+    //let's connect element
+    const letsConnectElement = document.getElementById("letsConnect");
+    letsConnectElement.addEventListener("mouseover", 
+        (event) => {
+            event.target.style.backgroundColor= "green";
+        });
+    //color reset
+    letsConnectElement.addEventListener("mouseout", 
+        (event)  => {
+            event.target.style.backgroundColor ="";
+        });   
 
-// const letsConnect = document.getElementById('letsConnect');
-// letsConnect.style.color = "black";
-// console.log(letsConnect);
+    //changing color of the bottom-header element
+    const bottomHeader = document.getElementById("bottom-header");
+    bottomHeader.addEventListener("mouseover", 
+        (event) => {
+            event.target.style.backgroundColor="green";
+        });
+    bottomHeader.addEventListener("mouseout",
+        (event) => {
+            event.target.style.backgroundColor="";
+        });
 
-//getElementByClassName()
-// const navBar = document.getElementsByClassName('box2');
-// for (i = 0; i < navBar.length; i++) {
-//     navBar[i].style.fontSize = '5rem';
-// }
-// console.log(navBar);
+    //nav menu
+    const mainNavMenuElement = document.getElementById("main-menu");
+    mainNavMenuElement.addEventListener("mouseover", 
+        (event) => {
+            event.target.style.font = "italic bold 25px Verdana, sans-serif";
+        });
+    mainNavMenuElement.addEventListener("mouseout",
+        (event) => {
+            event.target.style.font = "";
+        });
 
-//getElementByTagName - ex. ('li)
-
-// querySelector()
-// const container = document.querySelector('grid_container');
-// console.log(container);
-
-// querySelectorAll()
-// const container = document.querySelectorAll('div');
-// console.log(container);
-
-
-let button = document.querySelector('button');
-document.querySelector('#green').addEventListener('click', function() {
-    button.style.backgroundColor = 'yellow';
 });
+
+
 

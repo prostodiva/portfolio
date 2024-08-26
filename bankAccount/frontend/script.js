@@ -1,8 +1,9 @@
 
 const apiKey = "MS7sid27CEpWYWcUNfG6zw==0Zlh4wB1DziuGgjo"; // Your API key
-const apiUrl = "https://api.api-ninjas.com/v1/mortgagecalculator"; // Correct base URL
+// Correct base URL. I'm not using &q= because I added queryParams. It looks like it doesn't work together
+const apiUrl = "https://api.api-ninjas.com/v1/mortgagecalculator"; 
 
-// Grabbing elements from HTML
+// Creating elements and connecting them to HTML(id)
 const homeValueElement = document.querySelector(".home_value");
 const downpaymentElement = document.querySelector(".downpayment");
 const interestRateElement = document.querySelector(".interest_rate");
@@ -14,6 +15,9 @@ const errorElement = document.querySelector(".error");
 const Dollar = '$';
 const Percent = '%';
 
+// Add event listener to the submit button
+document.getElementById('submit_button').addEventListener('click', checkMortgageRate);
+
 /**
  * Function to fetch mortgage data from API
  */
@@ -24,7 +28,10 @@ async function checkMortgageRate() {
     const downpayment = parseFloat(document.getElementById('downpayment').value);
     const durationYears = parseFloat(document.getElementById('duration_years').value);
 
-    // Validate required fields
+/**
+Validate required fields
+NaN is short for "Not-a-Number". The isNaN() method returns true if a value is NaN. The isNaN() method converts the value to a number before testing it.
+ */
     if (isNaN(interestRate) || interestRate <= 0 || interestRate > 10000) {
         errorElement.innerText = "Invalid interest rate. It must be between 0 and 10000.";
         return;
@@ -76,5 +83,3 @@ async function checkMortgageRate() {
     }
 }
 
-    // Add event listener to the submit button
-    document.getElementById('submit_button').addEventListener('click', checkMortgageRate);
