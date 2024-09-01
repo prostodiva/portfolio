@@ -12,8 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://127.0.0.1:5500/portfolio/crm")
-//@CrossOrigin(origins = "http://127.0.0.1:5500") - works separate from the portfolio
+@CrossOrigin(origins = "http://127.0.0.1:5500")
 public class CustomerController {
 
     @Autowired
