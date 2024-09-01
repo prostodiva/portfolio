@@ -23,7 +23,7 @@
 }
 
 .title {
-    color: rgb(225, 214, 150);;
+    color: rgb(225, 214, 150);
     position: relative;
     left: 150px;
     top: 30px;
@@ -96,6 +96,25 @@ tr:hover {
     /* background-color: #f1f1f1; */
 }
 
+.box2 {
+
+}
 .result {
+    position: relative;
+    left: 50px;
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+    margin-top: 30px;
+    line-height: 1.5;
+    top: 0px;
     color: rgb(175, 174, 174);
+}
+
+.titles {
+    position: relative;
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+    margin-top: 0px;
+    color: rgb(175, 174, 174);
+    top: 0px;
 }

@@ -15,8 +15,8 @@
                 <div class="text"><h2>DOWNPAYMENT</h2></div>
                 <div class="text"><h2>INTEREST RATE</h2></div>
                 <div class="text"><h2>DURATION YEARS</h2></div>
-                <div>EMPTY BOX</div>
-                <div>EMPTY BOX</div>
+                <div class="empty_box"></div>
+                <div class="empty_box"></div>
 
                 <div class="home_value_form">
                     <input type="text" id="home_value" placeholder="Enter home value"><br>
@@ -33,35 +33,65 @@
                 <div class="button">
                     <button id="submit_button">SUBMIT</button>
                 </div>
-                <div class="monthly_payments">EMPTY BOX</div>
+                <div class="class="empty_box""></div>
             </div>
         </div>
         <div class="box2">
             <table id="responseTable">
-                <thead>
-                    <tr style="color:rgb(225, 214, 150);">
-                        <th><h2>HOME VALUE</h2></th>
-                        <th><h2>DOWNPAYMENT</h2></th>
-                        <th><h2>INTEREST RATE</h2></th>
-                        <th><h2>DURATION YEARS</h2></th>
-                        <th><h2>MONTHLY PAYMENT</h2></th>
-                    </tr>
-                </thead>
                 <tbody>
-                    <tr class="result">
-                        <td class="home_value"><h2>result</h2></td>
-                        <td class="downpayment"><h2>result</h2></td>
-                        <td class="interest_rate"><h2>result</h2></td>
-                        <td class="duration_years"><h2>result</h2></td>
-                        <td class="monthly_payment"><h2>result</h2></td>
-                    </tr>
+                    <th>
+                        <ul class="titles">
+                        <li><h2 style="color: rgb(225, 214, 150);">Monthly payment: </h2></li>
+                        <li><h2>total</h2></li>
+                        <li><h2>mortgage</h2><br></li>
+                        <li><h2 style="color: rgb(225, 214, 150);">Annual payment: </h2></li>
+                        <li><h2>total</h2></li>
+                        <li><h2>mortgage</h2></li>
+                        <li><h2>home insurance</h2></li>
+                        <li><h2>total interest paid</h2></li>
+                    </ul>
+                    </th>
+                    <th>
+                        <ul class="result">
+                            <ul class="total"><h2></h2></ul>
+                            <ul class="mortgage"><h2></h2></ul>
+
+                            <ul class="totalTwo"><h2></h2></ul>
+                            <ul class="mortgageTwo"><h2></h2></ul>
+                            <ul class="home_insurance"><h2></h2></ul>
+                            <ul class="total_interest_paid"><h2></h2></ul>
+                    </ul>
+                    </th>
+                    
+    
+        <!-- /**
+         * {
+         * "monthly_payment":
+         * {"total":1033,
+         * "mortgage":1033,
+         * "property_tax":0,
+         * "hoa":0,
+         * "annual_home_ins":0
+         * },
+         * 
+         * "annual_payment":{
+         * "total":12394,
+         * "mortgage":12394,
+         * "property_tax":0,
+         * "hoa":0,
+         * "home_insurance":0
+         * },
+         * "total_interest_paid":141809
+         * }
+         */  -->
+                    <ul/>
                 </tbody>
             </table>
         </div>
-        <div class="box3">3</div>
-        <div class="box4" style="border: 2px white double">2</div>
-        <div class="box5" style="border: 2px white double">3</div>
-        <div class="box6" style="border: 2px white double">3</div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
     </div>
     <script src="script.js"></script>
 </body>
