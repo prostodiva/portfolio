@@ -23,8 +23,8 @@ const homeInsuranceElement = document.querySelector(".home_insurance");
 
 
 // Define Dollar and Percent symbols
-const Dollar = '$';
-const Percent = '%';
+const Dollar = '$ ';
+const Percent = '% ';
 
 
 // Add event listener to the submit button
